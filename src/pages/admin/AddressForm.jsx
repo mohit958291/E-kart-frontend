@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Button } from '@/components/ui/button';
 import { addAddress, deleteAddress, setCart, setSelectedAddress } from '@/redux/productSlice';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Separator } from '@base-ui/react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';

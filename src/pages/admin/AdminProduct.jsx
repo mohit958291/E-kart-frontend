@@ -11,7 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { useDispatch, useSelector } from 'react-redux'
-import { Card } from '@/components/ui/card'
+import { Card } from '@/components/ui/Card'
 
 import { Button } from "@/components/ui/button"
 import {

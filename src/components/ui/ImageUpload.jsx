@@ -3,7 +3,7 @@ import { Label } from './label'
 import { Button } from './button';
 import { Input } from './input';
 
-import { Card, CardContent } from './card';
+import { Card, CardContent } from './Card';
 import { X } from 'lucide-react';
 
 function ImageUpload({productData,setProductData}) {
