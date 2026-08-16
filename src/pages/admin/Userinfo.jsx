@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button'
 import { ArrowLeft } from 'lucide-react'
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import userLogo from '../../assets/userLogo.jpg'
+import userLogo from '../../assets/userlogo.jpg'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
