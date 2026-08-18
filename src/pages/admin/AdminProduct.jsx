@@ -98,7 +98,7 @@ if(sortOrder === 'highTolow'){
     })
 
     try {
-      const res = await axios.put(`http://localhost:8000/api/v1/product/update/${editProduct._id}`,formData,{
+      const res = await axios.put(`https://e-kart-backend-1.onrender.com/api/v1/product/update/${editProduct._id}`,formData,{
         headers:{
           Authorization:`Bearer ${accessToken}`
         }
@@ -117,7 +117,7 @@ if(sortOrder === 'highTolow'){
   const deleteProductHandler = async(products)=>{
     try {
       const remainingProducts = products.filter((product)=>product.id !== productId)
-      const res = await axios.delete(`http://localhost:8000/api/v1/product/delete/${productId}`,{
+      const res = await axios.delete(`https://e-kart-backend-1.onrender.com/api/v1/product/delete/${productId}`,{
         headers:{
           Authorization:`Bearer ${accessToken}`
         }

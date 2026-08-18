@@ -54,7 +54,7 @@ function AddProduct() {
 
     try {
       setLoading(true)
-      const res  = await axios.post(`http://localhost:8000/api/v1/product/add`,formData,{
+      const res  = await axios.post(`https://e-kart-backend-1.onrender.com/api/v1/product/add`,formData,{
         headers:{
           Authorization:`Bearer ${accessToken}`
         }

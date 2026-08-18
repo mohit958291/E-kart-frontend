@@ -54,7 +54,7 @@ function Userinfo() {
         formData.append("file", file);  // image file for backend multer
       }
 
-      const res = await axios.put(`http://localhost:8000/api/v1/user/update/${userId}`, formData, {
+      const res = await axios.put(`https://e-kart-backend-1.onrender.com/api/v1/user/update/${userId}`, formData, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
           "Content-Type": "multipart/form-data"
@@ -73,7 +73,7 @@ function Userinfo() {
 
   const getUserDetails = async()=>{
     try {
-      const res = await axios.get(`http://localhost:8000/api/v1/user/get-user/${userId}`)
+      const res = await axios.get(`https://e-kart-backend-1.onrender.com/api/v1/user/get-user/${userId}`)
       if(res.data.success){
         setUpdateUser(res.data.user)
       }

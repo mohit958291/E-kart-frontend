@@ -16,7 +16,7 @@ function AdminUsers() {
     const accessToken = localStorage.getItem("accessToken");
 
     try {
-      const res = await axios.get('http://localhost:8000/api/v1/user/all-user',{
+      const res = await axios.get('https://e-kart-backend-1.onrender.com/api/v1/user/all-user',{
         headers:{
           Authorization:`Bearer ${accessToken}`
         }

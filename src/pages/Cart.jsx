@@ -22,7 +22,7 @@ function Cart() {
 
 const navigate = useNavigate();
 const dispatch = useDispatch();
-const API = 'http://localhost:8000/api/v1/cart';
+const API = 'https://e-kart-backend-1.onrender.com/api/v1/cart';
 const accessToken = localStorage.getItem('accessToken');
 
 const loadCart = async()=>{
